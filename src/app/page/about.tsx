@@ -8,7 +8,7 @@ const About = () => {
       <div className="py-32 flex flex-col md:flex-row gap-20">
         <div className="md:basis-1/2">
           <p className="uppercase font-semibold text-dark-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl">
-            North Van's Most
+            North Van&apos;s Most
           </p>
           <h1 className="uppercase mt-4 font-bold text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
             RELIABLE RENOVATION CONTRACTOR
