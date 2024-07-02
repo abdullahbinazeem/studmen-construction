@@ -30,8 +30,8 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <Container className="bg-white drop-shadow-md relative z-10">
-      <div className="flex items-center justify-between borderpx-8 py-8   xl:px-16">
+    <Container className="bg-white bg-opacity-90 backdrop-blur-sm drop-shadow-md relative z-10">
+      <div className="flex items-center justify-between  py-6  xl:px-16">
         <a href="/">
           <div className="flex items-center gap-4">
             <h1 className="text-base font-extrabold text-black md:text-lg lg:text-xl">
@@ -39,7 +39,7 @@ const Navbar = () => {
             </h1>
           </div>
         </a>
-        <div className="hidden items-center gap-5 font-bold uppercase text-black md:flex">
+        <div className="hidden items-center gap-5 font-semibold uppercase text-black md:flex">
           {navItems.map((navItem, i) => (
             <div className="flex items-center gap-5" key={i}>
               <Link
