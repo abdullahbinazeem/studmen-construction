@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="min-h-[100vh] flex flex-col">
       <Navbar />
-      <Container className="py-40 flex-1 h-full relative grid place-content-center overflow-hidden">
+      <Container className="py-40 bg-black flex-1 h-full relative grid place-content-center overflow-hidden">
         <Image
           src="/assets/hero/hero.jpg"
           alt="Hero Background Image"
