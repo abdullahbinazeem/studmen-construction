@@ -97,7 +97,7 @@ const Works = (props: Props) => {
             Our <span className="text-black">Projects</span>
           </h1>
 
-          <div className="mt-10 flex flex-wrap gap-3 md:gap-6">
+          {/* <div className="mt-10 flex flex-wrap gap-3 md:gap-6">
             {filters.map((filterItem, i) => (
               <div
                 onClick={() => {
@@ -137,7 +137,7 @@ const Works = (props: Props) => {
                 </p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </Container>
       <div className="mt-10 grid gap-0 px-5 sm:grid-cols-2 md:grid-cols-3 md:px-3 lg:mt-20 xl:grid-cols-4">
