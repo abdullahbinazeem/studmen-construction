@@ -60,7 +60,7 @@ const Services = () => {
                   src={`/assets/services/${service.img}.jpg`}
                   alt={`${service.title} Services`}
                   fill
-                  className="object-cover scale-125 group-hover:translate-x-12 duration-500 transition-all"
+                  className="object-cover scale-125 duration-500 transition-all"
                 />
               </div>
               <div className="p-8">
