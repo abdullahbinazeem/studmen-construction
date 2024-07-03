@@ -71,7 +71,7 @@ const Services = () => {
                   {service.description}
                 </p>
                 <a
-                  href={`/services/${service.url}`}
+                  href={`#estimate`}
                   className="hover:underline group/anchor font-semibold transition-all text-dark-primary uppercase text-sm md:text-base flex items-center gap-2"
                 >
                   Select Service
