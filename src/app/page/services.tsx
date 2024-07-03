@@ -50,37 +50,39 @@ const servicesList = [
 
 const Services = () => {
   return (
-    <Container className="pb-32">
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
-        {servicesList.map((service, i) => (
-          <div className="shadow-[0_3px_6px_rgb(0,0,0,0.15)] group" key={i}>
-            <div className="w-full relative aspect-[16/9] overflow-hidden">
-              <Image
-                src={`/assets/services/${service.img}.jpg`}
-                alt={`${service.title} Services`}
-                fill
-                className="object-cover scale-125 group-hover:translate-x-12 duration-500 transition-all"
-              />
+    <div id="services">
+      <Container className="pb-32">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
+          {servicesList.map((service, i) => (
+            <div className="shadow-[0_3px_6px_rgb(0,0,0,0.15)] group" key={i}>
+              <div className="w-full relative aspect-[16/9] overflow-hidden">
+                <Image
+                  src={`/assets/services/${service.img}.jpg`}
+                  alt={`${service.title} Services`}
+                  fill
+                  className="object-cover scale-125 group-hover:translate-x-12 duration-500 transition-all"
+                />
+              </div>
+              <div className="p-8">
+                <h1 className="lg:text-[20px] md:text-lg text-base font-medium text-black">
+                  {service.title}
+                </h1>
+                <p className="mb-10 text-pretty md:text-sm text-xs mt-4 text-gray-500">
+                  {service.description}
+                </p>
+                <a
+                  href={`/services/${service.url}`}
+                  className="hover:underline group/anchor font-semibold transition-all text-dark-primary uppercase text-sm md:text-base flex items-center gap-2"
+                >
+                  Select Service
+                  <MoveRight className="text-dark-primary group-hover/anchor:rotate-180 group-hover/anchor:translate-x-6 transition-all" />
+                </a>
+              </div>
             </div>
-            <div className="p-8">
-              <h1 className="lg:text-[20px] md:text-lg text-base font-medium text-black">
-                {service.title}
-              </h1>
-              <p className="mb-10 text-pretty md:text-sm text-xs mt-4 text-gray-500">
-                {service.description}
-              </p>
-              <a
-                href={`/services/${service.url}`}
-                className="hover:underline group/anchor font-semibold transition-all text-dark-primary uppercase text-sm md:text-base flex items-center gap-2"
-              >
-                Select Service
-                <MoveRight className="text-dark-primary group-hover/anchor:rotate-180 group-hover/anchor:translate-x-6 transition-all" />
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
-    </Container>
+          ))}
+        </div>
+      </Container>
+    </div>
   );
 };
 

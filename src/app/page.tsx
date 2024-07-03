@@ -1,5 +1,7 @@
 import Navbar from "./components/navbar";
 import About from "./page/about";
+import ContactForm from "./page/contactform";
+import Footer from "./page/footer";
 import Hero from "./page/hero";
 import Reviews from "./page/reviews";
 import Services from "./page/services";
@@ -16,6 +18,8 @@ export default function Home() {
       <Services />
       <Works />
       <Reviews />
+      <ContactForm />
+      <Footer />
     </div>
   );
 }

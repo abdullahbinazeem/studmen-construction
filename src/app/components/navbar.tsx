@@ -21,8 +21,8 @@ const navItems = [
     url: "#projects",
   },
   {
-    name: "Contact",
-    url: "#contact",
+    name: "Reviews",
+    url: "#reviews",
   },
 ];
 
@@ -80,7 +80,7 @@ const Navbar = () => {
           />
         </div>
         <Link
-          href="/estimate"
+          href="#estimate"
           className="box-border hidden cursor-pointer rounded-sm border-dark-primary bg-dark-primary px-5 py-4 text-white transition-all hover:border hover:bg-transparent hover:text-dark-primary lg:block"
         >
           <p className="font-semibold uppercase">Free Estimate</p>
@@ -97,13 +97,19 @@ const Navbar = () => {
             key={i}
             className="xs:text-lg cursor-pointer font-semibold text-white transition-all after:mt-2 after:block after:h-[2px] after:w-[50%] after:scale-0 after:bg-white after:transition-all hover:after:scale-110"
             href={navItem.url}
+            onClick={() => {
+              setToggle(false);
+            }}
           >
             {navItem.name}
           </Link>
         ))}
         <Link
-          href="/estimate"
+          href="#estimate"
           className="hover:scale-105 transition-all cursor-pointer self-start rounded-sm bg-white px-5 py-4 text-dark-bg"
+          onClick={() => {
+            setToggle(false);
+          }}
         >
           <p className="xs:text-lg font-semibold uppercase">Free Estimate</p>
         </Link>

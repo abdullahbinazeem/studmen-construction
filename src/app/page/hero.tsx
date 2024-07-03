@@ -23,7 +23,7 @@ const Hero = () => {
           </h1>
           <div className="text-center">
             <a
-              href="#contact"
+              href="#about"
               className="mt-6 inline-block rounded-md border-2 border-dark-primary bg-dark-primary px-6 py-3 font-semibold uppercase text-white transition-all hover:bg-transparent hover:border-white md:text-lg"
             >
               Get Started

@@ -1,33 +1,18 @@
-import React from "react";
-import Container from "../components/container";
-import { Mail, PhoneCall, TextSelect, UserRound } from "lucide-react";
+"use client";
 
-const About = () => {
+import React from "react";
+import { Mail, PhoneCall, TextSelect, UserRound } from "lucide-react";
+import Image from "next/image";
+
+const ContactForm = () => {
   return (
-    <div id="about">
-      <Container className="py-32">
-        <div className=" flex flex-col lg:flex-row gap-20">
-          <div className="md:basis-1/2">
-            <p className="uppercase font-semibold text-dark-primary text-2xl md:text-3xl lg:text-4xl">
-              North Van&apos;s Most
-            </p>
-            <h1 className="uppercase mt-2 md:mt-3 font-bold text-black text-3xl md:text-4xl lg:text-5xl">
-              RELIABLE RENOVATION CONTRACTOR
+    <div className="overflow-hidden bg-[#f9f9f9] py-40" id="estimate">
+      <div className="m-auto max-w-[1320px] md:px-5">
+        <div className="relative lg:flex">
+          <div className="basis-3/5 bg-white px-8 py-12 md:px-12 lg:px-20">
+            <h1 className="mb-10 text-2xl font-bold text-black md:text-3xl">
+              Get An Estimate Now
             </h1>
-            <p className="text-black  md:text-lg mt-4 md:mt-6">
-              Welcome to Studmen Construction! With over 10 years of experience,
-              we transform homes with precision, passion, and a personal touch.
-              Our commitment to quality craftsmanship, attention to detail, and
-              customer satisfaction has earned us a reputation for excellence
-              and reliability in North Vancouver. Choose Studemen Construction
-              for your renovation projects, and let us bring your vision to life
-              with our expertise and dedication to exceptional results.
-            </p>
-          </div>
-          <div className="md:basis-1/2 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-lg px-6 py-8 sm:py-12 sm:px-8 lg:py-16 lg:px-12">
-            <h2 className="font-bold text-black text-xl md:text-2xl lg:text-3xl">
-              Get an Estimate Today!
-            </h2>
 
             <form className="w-full mt-10">
               <div className="flex flex-col gap-2">
@@ -115,10 +100,18 @@ const About = () => {
               </button>
             </form>
           </div>
+          <div className="relative bottom-0 top-0 m-auto hidden aspect-video w-[50%] lg:absolute lg:right-[-10%] lg:block">
+            <Image
+              src="https://static.vecteezy.com/system/resources/previews/026/991/987/non_2x/attractive-man-in-construction-helmet-free-png.png"
+              alt="Man"
+              fill
+              className="object-contain"
+            />
+          </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };
 
-export default About;
+export default ContactForm;
