@@ -5,7 +5,7 @@ import { MoveRight } from "lucide-react";
 
 const servicesList = [
   {
-    title: "Decks and Exteriors",
+    title: "Decks & Exteriors",
     description:
       "Transform your outdoor living space with custom decks that blend seamlessly with your home's architecture. Our comprehensive exterior renovation services include siding, roofing, windows, and doors, enhancing both curb appeal and energy efficiency.",
     url: "decks-exteriors",

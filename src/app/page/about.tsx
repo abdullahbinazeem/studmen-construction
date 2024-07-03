@@ -7,10 +7,10 @@ const About = () => {
     <Container className="py-32">
       <div className=" flex flex-col lg:flex-row gap-20">
         <div className="md:basis-1/2">
-          <p className="uppercase font-semibold text-dark-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+          <p className="uppercase font-semibold text-dark-primary text-2xl md:text-3xl lg:text-4xl">
             North Van&apos;s Most
           </p>
-          <h1 className="uppercase mt-2 md:mt-3 font-bold text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+          <h1 className="uppercase mt-2 md:mt-3 font-bold text-black text-3xl md:text-4xl lg:text-5xl">
             RELIABLE RENOVATION CONTRACTOR
           </h1>
           <p className="text-black  md:text-lg mt-4 md:mt-6">

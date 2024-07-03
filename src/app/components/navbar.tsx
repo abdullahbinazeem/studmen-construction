@@ -35,7 +35,7 @@ const Navbar = () => {
         <a href="/">
           <div className="flex items-center gap-4">
             <h1 className="text-base font-extrabold text-black md:text-lg lg:text-xl">
-              Studmen <span className="text-dark-primary">Builders</span>
+              Studmen <span className="text-dark-primary">Contructions</span>
             </h1>
           </div>
         </a>
