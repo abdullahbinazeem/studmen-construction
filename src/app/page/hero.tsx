@@ -4,7 +4,7 @@ import Navbar from "../components/navbar";
 
 const Hero = () => {
   return (
-    <div className="min-h-[90vh] flex flex-col">
+    <div className="min-h-[100vh] flex flex-col">
       <Container className="py-40 bg-black flex-1 h-full relative grid place-content-center overflow-hidden">
         <Image
           src="/assets/hero/hero-bg.jpg"

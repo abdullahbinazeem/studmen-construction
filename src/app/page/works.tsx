@@ -96,48 +96,6 @@ const Works = (props: Props) => {
           <h1 className="mt-4  font-bold leading-[110%] text-dark-primary text-3xl md:text-4xl lg:text-5xl">
             Our <span className="text-black">Projects</span>
           </h1>
-
-          {/* <div className="mt-10 flex flex-wrap gap-3 md:gap-6">
-            {filters.map((filterItem, i) => (
-              <div
-                onClick={() => {
-                  if (filterItem.searchFor != filter) {
-                    setFilter(filterItem.searchFor);
-                  } else {
-                    setFilter("");
-                  }
-                }}
-                key={filterItem.searchFor}
-                className={cn(
-                  "group flex cursor-pointer select-none items-center gap-2 rounded-sm bg-gray-200 px-4 py-2 capitalize transition-all hover:scale-110 hover:bg-gray-100 lg:px-6 lg:py-3",
-                  filterItem.searchFor == filter
-                    ? "bg-dark-primary hover:bg-dark-primary hover:bg-opacity-85"
-                    : ""
-                )}
-              >
-                {filterItem.searchFor == filter ? (
-                  <MinusIcon
-                    className="h-4 w-4 text-white transition-all group-hover:rotate-180 lg:h-6 lg:w-6"
-                    strokeWidth={1.5}
-                  />
-                ) : (
-                  <PlusIcon
-                    className="h-4 w-4 text-dark-primary transition-all group-hover:rotate-180 lg:h-6 lg:w-6"
-                    strokeWidth={1.5}
-                  />
-                )}
-
-                <p
-                  className={cn(
-                    "text-xs text-dark-primary transition-all group-hover:font-semibold md:text-sm lg:text-base",
-                    filterItem.searchFor == filter ? "text-white" : ""
-                  )}
-                >
-                  {filterItem.title}
-                </p>
-              </div>
-            ))}
-          </div> */}
         </div>
       </Container>
       <div className="mt-10 grid gap-0 px-5 sm:grid-cols-2 md:grid-cols-3 md:px-3 lg:mt-20 xl:grid-cols-4">
