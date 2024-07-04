@@ -30,7 +30,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <Container className="bg-white bg-opacity-90 backdrop-blur-sm drop-shadow-md relative z-10">
+    <Container className="bg-white bg-opacity-90 backdrop-blur-sm drop-shadow-sm relative z-10">
       <div className="flex items-center justify-between  py-6  xl:px-16">
         <a href="/">
           <div className="flex items-center gap-4">

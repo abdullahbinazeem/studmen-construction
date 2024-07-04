@@ -10,7 +10,7 @@ import Works from "./page/works";
 export default function Home() {
   return (
     <div>
-      <div className="sticky top-0 w-full z-50 ">
+      <div className="sticky top-0 w-full z-50 transition-all ease-in-out">
         <Navbar />
       </div>
       <Hero />
