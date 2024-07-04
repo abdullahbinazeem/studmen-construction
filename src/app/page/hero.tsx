@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="min-h-[90vh] flex flex-col">
       <Container className="py-40 bg-black flex-1 h-full relative grid place-content-center overflow-hidden">
         <Image
-          src="/assets/hero/hero.jpg"
+          src="/assets/hero/hero-bg.jpg"
           alt="Hero Background Image"
           fill
           className="object-cover hero-anim"
