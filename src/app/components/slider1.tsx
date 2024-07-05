@@ -32,9 +32,11 @@ const Slider1 = () => {
   };
 
   const handleInteractionStart = () => {
+    const scrollBarCompensation = window.innerWidth - document.body.offsetWidth;
+
     setIsDragging(true);
     document.body.style.overflow = "hidden";
-    document.body.style.paddingRight = "17px";
+    document.body.style.paddingRight = `${scrollBarCompensation}px`;
   };
   const handleInteractionEnd = () => {
     document.body.style.overflow = "";
