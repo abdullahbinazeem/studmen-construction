@@ -4,16 +4,16 @@ import Navbar from "../components/navbar";
 
 const Hero = () => {
   return (
-    <div className="min-h-[90vh] flex flex-col">
-      <Container className="py-40 bg-black flex-1 h-full relative grid place-content-center overflow-hidden">
-        <Image
-          src="/assets/hero/hero-bg.jpg"
-          alt="Hero Background Image"
-          fill
-          className="object-cover hero-anim"
+    <div className="min-h-[90vh] flex flex-col overflow-hidden">
+      <Container className="py-40 bg-[#000] flex-1 h-full relative grid place-content-center overflow-hidden">
+        <video
+          src="/assets/hero.mp4"
+          autoPlay
+          muted
+          loop
+          className="absolute z-[5] left-0 top-0 w-full h-full object-cover opacity-40"
         />
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50" />
-        <div className="relative text-white -mt-32">
+        <div className="relative text-white -mt-32 z-[10]">
           <p className="font-semibold text-center text-lg md:text-xl lg:text-2xl mb-2">
             Dream Home Starts Here
           </p>
@@ -24,7 +24,7 @@ const Hero = () => {
           <div className="text-center">
             <a
               href="#about"
-              className="mt-6 inline-block rounded-md border-2 border-dark-primary bg-dark-primary px-6 py-3 font-semibold uppercase text-white transition-all hover:bg-transparent hover:border-white md:text-lg"
+              className="mt-6 inline-block rounded-sm border-2 border-primary bg-primary px-6 py-3 hover:text-white font-bold uppercase text-black transition-all hover:bg-transparent hover:border-white md:text-lg"
             >
               Get Started
             </a>
