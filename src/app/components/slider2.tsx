@@ -31,9 +31,16 @@ const Slider1 = () => {
     }
   };
 
-  const handleInteractionStart = () => setIsDragging(true);
-  const handleInteractionEnd = () => setIsDragging(false);
-
+  const handleInteractionStart = () => {
+    setIsDragging(true);
+    document.body.style.overflow = "hidden";
+    document.body.style.paddingRight = "17px";
+  };
+  const handleInteractionEnd = () => {
+    document.body.style.overflow = "";
+    document.body.style.paddingRight = "";
+    setIsDragging(false);
+  };
   return (
     <div
       className="lg:min-w-[450px] xl:min-w-[600px] max-w-[600px] aspect-[12/10] relative shrink-0"

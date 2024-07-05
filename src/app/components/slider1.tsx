@@ -31,19 +31,27 @@ const Slider1 = () => {
     }
   };
 
-  const handleInteractionStart = () => setIsDragging(true);
-  const handleInteractionEnd = () => setIsDragging(false);
+  const handleInteractionStart = () => {
+    setIsDragging(true);
+    document.body.style.overflow = "hidden";
+    document.body.style.paddingRight = "17px";
+  };
+  const handleInteractionEnd = () => {
+    document.body.style.overflow = "";
+    document.body.style.paddingRight = "";
+    setIsDragging(false);
+  };
   return (
-    <div
-      className="lg:min-w-[450px] xl:min-w-[600px] max-w-[600px] aspect-[30/25] relative shrink-0"
-      onMouseMove={handleMouseMove}
-      onTouchMove={handleTouchMove}
-      onMouseDown={handleInteractionStart}
-      onMouseUp={handleInteractionEnd}
-      onTouchStart={handleInteractionStart}
-      onTouchEnd={handleInteractionEnd}
-    >
-      <div className="relative w-full aspect-[30/25] m-auto overflow-hidden select-none">
+    <div className="lg:min-w-[450px] xl:min-w-[600px] max-w-[600px] aspect-[30/25] relative shrink-0">
+      <div
+        className="relative w-full aspect-[30/25] m-auto overflow-hidden select-none"
+        onMouseMove={handleMouseMove}
+        onTouchMove={handleTouchMove}
+        onMouseDown={handleInteractionStart}
+        onMouseUp={handleInteractionEnd}
+        onTouchStart={handleInteractionStart}
+        onTouchEnd={handleInteractionEnd}
+      >
         <Image
           alt=""
           fill
