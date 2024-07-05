@@ -8,33 +8,43 @@ const Slider1 = () => {
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
 
-  const handleMove = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    if (!isDragging) return;
-
-    const rect = event.currentTarget.getBoundingClientRect();
-    const x = Math.max(0, Math.min(event.clientX - rect.left, rect.width));
+  const handleMove = (clientX: number, rect: DOMRect) => {
+    const x = Math.max(0, Math.min(clientX - rect.left, rect.width));
     const percent = Math.max(0, Math.min((x / rect.width) * 100, 100));
-
     setSliderPosition(percent);
   };
 
-  const handleMouseDown = () => {
-    setIsDragging(true);
+  const handleMouseMove = (
+    event: React.MouseEvent<HTMLDivElement, MouseEvent>
+  ) => {
+    if (!isDragging) return;
+    const rect = event.currentTarget.getBoundingClientRect();
+    handleMove(event.clientX, rect);
   };
 
-  const handleMouseUp = () => {
-    setIsDragging(false);
+  const handleTouchMove = (event: React.TouchEvent<HTMLDivElement>) => {
+    if (!isDragging) return;
+    const rect = event.currentTarget.getBoundingClientRect();
+    if (event.touches.length > 0) {
+      const touch = event.touches[0];
+      handleMove(touch.clientX, rect);
+    }
   };
+
+  const handleInteractionStart = () => setIsDragging(true);
+  const handleInteractionEnd = () => setIsDragging(false);
+
   return (
     <div
       className="lg:min-w-[450px] xl:min-w-[600px] max-w-[600px] aspect-[12/10] relative shrink-0"
-      onMouseUp={handleMouseUp}
+      onMouseMove={handleMouseMove}
+      onTouchMove={handleTouchMove}
+      onMouseDown={handleInteractionStart}
+      onMouseUp={handleInteractionEnd}
+      onTouchStart={handleInteractionStart}
+      onTouchEnd={handleInteractionEnd}
     >
-      <div
-        className="relative w-full aspect-[12/10] m-auto overflow-hidden select-none"
-        onMouseMove={handleMove}
-        onMouseDown={handleMouseDown}
-      >
+      <div className="relative w-full aspect-[12/10] m-auto overflow-hidden select-none">
         <Image
           alt=""
           fill
