@@ -7,11 +7,11 @@ const Hero = () => {
     <div className="min-h-[90vh] flex flex-col overflow-hidden">
       <Container className="py-40 bg-[#000] flex-1 h-full relative grid place-content-center overflow-hidden">
         <video
-          src="/assets/hero.mp4"
+          src="/assets/hero2.mp4"
           autoPlay
           muted
           loop
-          className="absolute z-[5] left-0 top-0 w-full h-full object-cover opacity-40"
+          className="absolute z-[5] left-0 top-0 w-full h-full object-cover opacity-50"
         />
         <div className="relative text-white -mt-32 z-[10]">
           <p className="font-semibold text-center text-lg md:text-xl lg:text-2xl mb-2">

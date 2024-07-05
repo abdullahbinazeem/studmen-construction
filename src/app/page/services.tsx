@@ -51,8 +51,14 @@ const servicesList = [
 const Services = () => {
   return (
     <div id="services">
-      <Container className="pb-32">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
+      <Container className="py-32">
+        <p className="uppercase font-semibold text-center text-dark-primary text-2xl md:text-3xl lg:text-4xl">
+          What you see is what you get
+        </p>
+        <h1 className="uppercase mt-2 md:mt-3 text-center font-bold text-black text-3xl md:text-4xl lg:text-5xl">
+          Provided Services
+        </h1>
+        <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
           {servicesList.map((service, i) => (
             <div className="shadow-[0_3px_6px_rgb(0,0,0,0.15)] group" key={i}>
               <div className="w-full relative aspect-[16/9] overflow-hidden">

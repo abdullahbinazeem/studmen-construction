@@ -64,13 +64,15 @@ const Footer = () => {
       </div>
       <div className="bg-[#111111]">
         <Container className="p-7">
-          <p className="serrat text-center text-white">
-            © Copyright 2024 Studmen Construction
+          <p className="serrat text-center text-white text-sm">
+            © Copyright 2024 Studmen Construction. The content of this website
+            is the responsibility of the website owner.
           </p>
-          <p className="serrat mt-2 cursor-pointer text-center text-white transition-all underline">
+          <p className="serrat mt-2 cursor-pointer text-center text-white transition-all hover:underline">
             <a href="https://xaama.tech" target="_blank">
               {" "}
-              Website Design by Xamaa Developments
+              Website Design by{" "}
+              <span className="underline"> Xamaa Developments</span>
             </a>
           </p>
         </Container>
