@@ -21,18 +21,8 @@ const photos = [
     tags: [""],
   },
   {
-    alt: "Drywalls",
-    url: "2",
-    tags: [""],
-  },
-  {
     alt: "Decking",
     url: "3",
-    tags: [""],
-  },
-  {
-    alt: "Disbaled Access Toilet",
-    url: "4",
     tags: [""],
   },
   {

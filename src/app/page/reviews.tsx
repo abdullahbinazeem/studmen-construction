@@ -11,6 +11,7 @@ import "swiper/css";
 import { Navigation } from "swiper/modules";
 
 import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
+import Image from "next/image";
 
 type Carousel = {
   title: string;
@@ -49,8 +50,15 @@ const Reviews = () => {
   const sliderRef = useRef<any>();
 
   return (
-    <div id="reviews">
-      <Container className="bg-gray-100 py-32">
+    <div id="reviews" className="relative">
+      <Image
+        src="/assets/reviews/review-bg.svg"
+        alt="Reviews Background Image"
+        width={300}
+        height={300}
+        className="absolute z-[1] left-0 top-0 w-full h-full  object-cover opacity-5"
+      />
+      <Container className="bg-gray-100 py-32 ">
         <h2 className="text-2xl font-semibold text-lightblack md:text-3xl lg:text-4xl">
           What people are saying?
         </h2>
@@ -91,13 +99,13 @@ const Reviews = () => {
           ))}
           <div
             onClick={() => sliderRef.current?.slideNext()}
-            className="hover:bg-slate-200 bg-slate-50 transition-all border-slate-600 rounded-full  p-2 sm:p-3 border cursor-pointer absolute  right-0  z-[20] h-min md:top-0 bottom-0 m-auto"
+            className="hover:bg-slate-200 bg-slate-50 transition-all border-slate-600 rounded-full  p-2 sm:p-3 border cursor-pointer absolute  right-0  z-[20] h-min top-0 bottom-0 m-auto"
           >
             <ArrowRight className="text-slate-600" />
           </div>
           <div
             onClick={() => sliderRef.current?.slidePrev()}
-            className="hover:bg-slate-200 bg-slate-50  transition-all border-slate-600 rounded-full p-2 sm:p-3 border  cursor-pointer absolute left-0  z-[20]  h-min md:top-0 bottom-0 m-auto"
+            className="hover:bg-slate-200 bg-slate-50  transition-all border-slate-600 rounded-full p-2 sm:p-3 border  cursor-pointer absolute left-0  z-[20]  h-min top-0 bottom-0 m-auto"
           >
             <ArrowLeft className="text-slate-600" />
           </div>
