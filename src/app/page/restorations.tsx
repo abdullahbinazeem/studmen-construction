@@ -24,11 +24,10 @@ const Restorations = () => {
               Stair Restoration
             </h2>
             <p className="text-black  lg:text-lg my-4 md:my-6 whitespace-break-spaces">
-              Welcome to Studmen Construction! With over 10 years of experience,
-              we transform homes with precision, passion, and a personal touch.
-              Our commitment to quality craftsmanship, attention to detail, and
-              customer satisfaction has earned us a reputation for excellence
-              and reliability in North Vancouver.
+              Give your damaged exteriors a new lease on life! We specialize in
+              repairing and refinishing exteriors to restore their original
+              beauty. Our experienced craftsmen can make your stairs look brand
+              new again, at an affordable price.
             </p>
           </div>
         </div>
@@ -42,11 +41,11 @@ const Restorations = () => {
               Kitchen Remodelling
             </h2>
             <p className="text-black  lg:text-lg my-4 md:my-6 whitespace-break-spaces">
-              Welcome to Studmen Construction! With over 10 years of experience,
-              we transform homes with precision, passion, and a personal touch.
-              Our commitment to quality craftsmanship, attention to detail, and
-              customer satisfaction has earned us a reputation for excellence
-              and reliability in North Vancouver.
+              From blank canvas to culinary haven! Imagine a space transformed -
+              where once there was nothing, now a stunning kitchen awaits. We
+              take your vision and craft a dream kitchen, complete with sleek
+              cabinets, top-of-the-line appliances, and a layout designed for
+              your cooking style.
             </p>
           </div>
         </div>

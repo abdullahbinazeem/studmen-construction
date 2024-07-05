@@ -98,7 +98,7 @@ const Works = (props: Props) => {
           </h1>
         </div>
       </Container>
-      <div className="mt-10 grid gap-0 px-5 sm:grid-cols-2 md:grid-cols-3 md:px-3 lg:mt-20 xl:grid-cols-4">
+      <div className="mt-10 grid gap-0 px-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 md:px-3 lg:mt-20 xl:grid-cols-5">
         {photos.map((photo, index) => (
           <div
             key={photo.alt + " " + index}
@@ -110,7 +110,10 @@ const Works = (props: Props) => {
                   : count > 4 + seemore && props.RemoveSeeMore == null
                   ? "max-[640px]:m-0 max-[640px]:h-0 max-[640px]:w-0 max-[640px]:scale-0"
                   : "block"
-                : "absolute m-0 h-0 w-0 scale-0"
+                : "absolute m-0 h-0 w-0 scale-0",
+              index % 2 == 0
+                ? "sm:row-span-1 row-span-2 sm:aspect-square aspect-[1/2]"
+                : ""
             )}
           >
             <Image
