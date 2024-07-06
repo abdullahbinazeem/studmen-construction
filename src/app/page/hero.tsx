@@ -11,6 +11,7 @@ const Hero = () => {
           autoPlay
           muted
           loop
+          playsInline
           className="absolute z-[5] left-0 top-0 w-full h-full object-cover opacity-50"
         />
         <div className="relative text-white -mt-32 z-[10]">
